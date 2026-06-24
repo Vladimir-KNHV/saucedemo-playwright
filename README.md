@@ -40,7 +40,7 @@ UI-компоненты (карточка товара, navbar) использу
   <img src="https://github.com/Vladimir-KNHV/saucedemo-playwright/blob/gh-pages/Desktop%20Screenshot%202026.06.16%20-%2012.16.36.20.png" alt="Allure Report Dashboard" width="80%"/>
 </div>
 
-[Открыть полный отчёт →](https://vladimir-knhv.github.io/playwright/6/index.html)
+[Открыть полный отчёт →](https://vladimir-knhv.github.io/saucedemo-playwright/)
 
 ## Начало работы
 
