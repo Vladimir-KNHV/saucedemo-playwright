@@ -1,0 +1,32 @@
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "checkout_info_title" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="title"]"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Text with name "checkout_info_title" have text "Checkout: Your Information"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="title"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Container with name "checkout_info_container" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[class="checkout_info"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Input with name "first_name" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="firstName"]"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Input with name "first_name" have text ""
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="firstName"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Input with name "last_name" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="lastName"]"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Input with name "last_name" have text ""
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="lastName"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Input with name "postal_code" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="postalCode"]"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Input with name "postal_code" have text ""
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="postalCode"]"
+INFO     BASE_ELEMENT:base_element.py:36 Clicking Button with name "cancel_button"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="cancel"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "cart title" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="title"]"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Text with name "cart title" have text "Your Cart"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="title"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "cart qty label" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="cart-quantity-label"]"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Text with name "cart qty label" have text "QTY"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="cart-quantity-label"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "cart desc label" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="cart-desc-label"]"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Text with name "cart desc label" have text "Description"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="cart-desc-label"]"
