@@ -17,7 +17,7 @@ def assert_sorted_products(after: list, option: SortOption):
         assert expected == after
 
 def assert_product_consistency(expected: list, actual: list, context: str):
-    step = f"Assert product consistency {context}"
+    step = f"Assert product consistency: {context}"
     with allure.step(step):
         allure.attach(format_items(expected), name="expected", attachment_type=allure.attachment_type.TEXT)
         allure.attach(format_items(actual), name="actual", attachment_type=allure.attachment_type.TEXT)

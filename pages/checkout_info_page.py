@@ -6,6 +6,8 @@ from elements.text import Text
 from pages.base_page import BasePage
 from playwright.sync_api import Page
 import allure
+import re
+from tools.routes import AppRoute
 
 class CheckoutInfoPage(BasePage):
     def __init__(self, page: Page):
@@ -36,6 +38,7 @@ class CheckoutInfoPage(BasePage):
 
         self._checkout_info_zip.check_visible()
         self._checkout_info_zip.check_have_text('')
+        self.check_current_url(re.compile(f'.*{AppRoute.CHECKOUT_INFO.value}'))
 
 
 

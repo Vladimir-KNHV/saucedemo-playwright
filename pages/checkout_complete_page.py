@@ -24,7 +24,7 @@ class CheckoutCompletePage(BasePage):
 
         self._checkout_complete_back_home_button = Button(page, '[data-test="back-to-products"]', 'back+home_button')
 
-    @allure.step('Check visible checkout complete header')
+    @allure.step('Check visible checkout complete page')
     def check_visible_checkout_complete_page(self):
         self._checkout_complete_title.check_visible()
         self._checkout_complete_title.check_have_text('Checkout: Complete!')
