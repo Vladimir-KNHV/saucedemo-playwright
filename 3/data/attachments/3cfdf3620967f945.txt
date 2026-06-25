@@ -1,0 +1,109 @@
+INFO     BASE_ELEMENT:base_element.py:36 Clicking Button with name "add to cart button"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "button.btn_small" with index "1"
+INFO     BASE_ELEMENT:base_element.py:36 Clicking Button with name "add to cart button"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "button.btn_small" with index "4"
+INFO     BASE_ELEMENT:base_element.py:36 Clicking Button with name "add to cart button"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "button.btn_small" with index "3"
+INFO     BASE_ELEMENT:base_element.py:36 Clicking Button with name "add to cart button"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "button.btn_small" with index "2"
+INFO     BASE_ELEMENT:base_element.py:36 Clicking Button with name "add to cart button"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "button.btn_small" with index "0"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="shopping-cart-link"]"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-name"]" with index "1"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-desc"]" with index "1"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-price"]" with index "1"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-name"]" with index "4"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-desc"]" with index "4"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-price"]" with index "4"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-name"]" with index "3"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-desc"]" with index "3"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-price"]" with index "3"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-name"]" with index "2"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-desc"]" with index "2"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-price"]" with index "2"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-name"]" with index "0"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-desc"]" with index "0"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-price"]" with index "0"
+INFO     BASE_ELEMENT:base_element.py:36 Clicking Link with name "cart icon link"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="shopping-cart-link"]"
+INFO     CONTAINER_ELEMENT:container.py:14 Getting count of Container with name "item card"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Container with name "item card" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item"]" with index "0"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "item name" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-name"]" with index "0"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "item description" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-desc"]" with index "0"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "item price" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-price"]" with index "0"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Button with name "add to cart button" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "button.btn_small" with index "0"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Button with name "add to cart button" have text "Remove"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "button.btn_small" with index "0"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Container with name "item card" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item"]" with index "1"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "item name" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-name"]" with index "1"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "item description" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-desc"]" with index "1"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "item price" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-price"]" with index "1"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Button with name "add to cart button" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "button.btn_small" with index "1"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Button with name "add to cart button" have text "Remove"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "button.btn_small" with index "1"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Container with name "item card" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item"]" with index "2"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "item name" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-name"]" with index "2"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "item description" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-desc"]" with index "2"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "item price" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-price"]" with index "2"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Button with name "add to cart button" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "button.btn_small" with index "2"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Button with name "add to cart button" have text "Remove"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "button.btn_small" with index "2"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Container with name "item card" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item"]" with index "3"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "item name" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-name"]" with index "3"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "item description" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-desc"]" with index "3"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "item price" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-price"]" with index "3"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Button with name "add to cart button" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "button.btn_small" with index "3"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Button with name "add to cart button" have text "Remove"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "button.btn_small" with index "3"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Container with name "item card" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item"]" with index "4"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "item name" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-name"]" with index "4"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "item description" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-desc"]" with index "4"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "item price" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-price"]" with index "4"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Button with name "add to cart button" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "button.btn_small" with index "4"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Button with name "add to cart button" have text "Remove"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "button.btn_small" with index "4"
+INFO     CONTAINER_ELEMENT:container.py:14 Getting count of Container with name "cart item"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item"]"
+INFO     CONTAINER_ELEMENT:container.py:14 Getting count of Container with name "item card"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item"]"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-name"]" with index "0"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-desc"]" with index "0"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-price"]" with index "0"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-name"]" with index "1"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-desc"]" with index "1"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-price"]" with index "1"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-name"]" with index "2"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-desc"]" with index "2"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-price"]" with index "2"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-name"]" with index "3"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-desc"]" with index "3"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-price"]" with index "3"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-name"]" with index "4"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-desc"]" with index "4"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-price"]" with index "4"
