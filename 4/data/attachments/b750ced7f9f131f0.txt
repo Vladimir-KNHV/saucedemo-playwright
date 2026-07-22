@@ -1,0 +1,60 @@
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="firstName"]"
+INFO     INPUT_ELEMENT:input.py:18 Fill Input with name "first_name" to value "user"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="firstName"]"
+INFO     INPUT_ELEMENT:input.py:25 Checking Input with name "first_name" have value "user"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="lastName"]"
+INFO     INPUT_ELEMENT:input.py:18 Fill Input with name "last_name" to value "user"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="lastName"]"
+INFO     INPUT_ELEMENT:input.py:25 Checking Input with name "last_name" have value "user"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="postalCode"]"
+INFO     INPUT_ELEMENT:input.py:18 Fill Input with name "postal_code" to value "123345"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="postalCode"]"
+INFO     INPUT_ELEMENT:input.py:25 Checking Input with name "postal_code" have value "123345"
+INFO     BASE_ELEMENT:base_element.py:36 Clicking Button with name "continue_button"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="continue"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "checkout_overview_title" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="title"]"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Text with name "checkout_overview_title" have text "Checkout: Overview"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="title"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "qty_label" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="cart-quantity-label"]"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Text with name "qty_label" have text "QTY"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="cart-quantity-label"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "desc_label" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="cart-desc-label"]"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Text with name "desc_label" have text "Description"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="cart-desc-label"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Container with name "summary_info_container" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[class="summary_info"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "payment_label" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="payment-info-label"]"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Text with name "payment_label" have text "Payment Information:"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="payment-info-label"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "payment_info_value" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="payment-info-value"]"
+INFO     BASE_ELEMENT:base_element.py:57 Checking Text with name "payment_info_value" have contain text "SauceCard #"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="payment-info-value"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "shipping_info_label" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="shipping-info-label"]"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Text with name "shipping_info_label" have text "Shipping Information:"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="shipping-info-label"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "shipping_info_value" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="shipping-info-value"]"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Text with name "shipping_info_value" have text "Free Pony Express Delivery!"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="shipping-info-value"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "total_info_label" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="total-info-label"]"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Text with name "total_info_label" have text "Price Total"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="total-info-label"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "total_info_value" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="subtotal-label"]"
+INFO     BASE_ELEMENT:base_element.py:57 Checking Text with name "total_info_value" have contain text "Item total: $"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="subtotal-label"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "total_info_value" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="tax-label"]"
+INFO     BASE_ELEMENT:base_element.py:57 Checking Text with name "total_info_value" have contain text "Tax: $"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="tax-label"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "summary_total_label" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="total-label"]"
+INFO     BASE_ELEMENT:base_element.py:57 Checking Text with name "summary_total_label" have contain text "Total: $"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="total-label"]"
