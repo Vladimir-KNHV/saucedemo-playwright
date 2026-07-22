@@ -33,13 +33,13 @@ class TestProductsPage:
     @pytest.mark.cart
     def test_add_all_product_to_cart(self, products_page_with_state: ProductsPage, cart_page_with_state: CartPage):
         products_page_with_state.open(AppRoute.PRODUCTS)
-        num = [0, 1, 2, 3, 4, 5]
-        products_page_with_state.item_view_component.click_add_to_cart_button(indexes=num)
+        product_indexes_list = [0, 1, 2, 3, 4, 5]
+        products_page_with_state.item_view_component.click_add_to_cart_button(indexes=product_indexes_list)
         image_cart_count = products_page_with_state.navbar.get_count_in_icon_cart()
         assert_cart_count(cart_count=image_cart_count, total=6)
-        selected_product = products_page_with_state.item_view_component.get_item_data(indexes=num)
+        selected_product = products_page_with_state.item_view_component.get_item_data(indexes=product_indexes_list)
         products_page_with_state.navbar.open_cart()
-        cart_page_with_state.item_view_component.check_visible(indexes=num, added=True, has_image=False)
+        cart_page_with_state.item_view_component.check_visible(indexes=product_indexes_list, added=True, has_image=False)
         cart_count_items = cart_page_with_state.get_cart_items_count()
         assert_cart_count(cart_count=cart_count_items, total=6)
         selected_product_in_cart = cart_page_with_state.item_view_component.get_item_data()
@@ -50,17 +50,17 @@ class TestProductsPage:
     @allure.severity(Severity.CRITICAL)
     @pytest.mark.cart
     def test_add_random_products_to_cart(self, products_page_with_state: ProductsPage, cart_page_with_state: CartPage):
-        length = random.randint(1, 6)
-        result = random.sample(range(0, 5), length)
+        products_to_add_count = random.randint(1, 6)
+        product_indexes_list = random.sample(range(0, 6), products_to_add_count)
         products_page_with_state.open(AppRoute.PRODUCTS)
-        products_page_with_state.item_view_component.click_add_to_cart_button(indexes=result)
+        products_page_with_state.item_view_component.click_add_to_cart_button(indexes=product_indexes_list)
         image_cart_count = products_page_with_state.navbar.get_count_in_icon_cart()
-        assert_cart_count(cart_count=image_cart_count, total=len(result))
-        selected_product = products_page_with_state.item_view_component.get_item_data(indexes=result)
+        assert_cart_count(cart_count=image_cart_count, total=len(product_indexes_list))
+        selected_product = products_page_with_state.item_view_component.get_item_data(indexes=product_indexes_list)
         products_page_with_state.navbar.open_cart()
         cart_page_with_state.item_view_component.check_visible(added=True, has_image=False)
         cart_count_items = cart_page_with_state.get_cart_items_count()
-        assert_cart_count(cart_count=cart_count_items, total=len(result))
+        assert_cart_count(cart_count=cart_count_items, total=len(product_indexes_list))
         selected_product_in_cart = cart_page_with_state.item_view_component.get_item_data()
         assert_product_consistency(expected=selected_product, actual=selected_product_in_cart, context="Products page to cart page")
 
