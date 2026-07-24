@@ -36,15 +36,9 @@ class Settings(BaseSettings):
             "PYTEST_XDIST_WORKER",
             "master"
         )
-        videos_dir = DirectoryPath(
-            f'./videos/{worker_id}'
-        )
-        trace_dir = DirectoryPath(
-            f'./tracing/{worker_id}'
-        )
-        allure_results_dir = DirectoryPath(
-            f'./allure-results/{worker_id}'
-        )
+        videos_dir = DirectoryPath('./videos')
+        trace_dir = DirectoryPath('./tracing')
+        allure_results_dir = DirectoryPath('./allure-results')
 
         browser_state_file = FilePath(
             f"browser-state-{worker_id}.json"
