@@ -32,17 +32,41 @@ class Settings(BaseSettings):
 
     @classmethod
     def initialize(cls) -> Self:
-        videos_dir = DirectoryPath('./videos')
-        trace_dir = DirectoryPath('./tracing')
-        allure_results_dir = DirectoryPath('./allure-results')
-        browser_state_file = FilePath("browser-state.json")
+        worker_id = os.getenv(
+            "PYTEST_XDIST_WORKER",
+            "master"
+        )
+        videos_dir = DirectoryPath(
+            f'./videos/{worker_id}'
+        )
+        trace_dir = DirectoryPath(
+            f'./tracing/{worker_id}'
+        )
+        allure_results_dir = DirectoryPath(
+            f'./allure-results/{worker_id}'
+        )
 
-        videos_dir.mkdir(exist_ok=True)
-        trace_dir.mkdir(exist_ok=True)
-        allure_results_dir.mkdir(exist_ok=True)
+        browser_state_file = FilePath(
+            f"browser-state-{worker_id}.json"
+        )
+
+        videos_dir.mkdir(
+            parents=True,
+            exist_ok=True
+        )
+
+        trace_dir.mkdir(
+            parents=True,
+            exist_ok=True
+        )
+
+        allure_results_dir.mkdir(
+            parents=True,
+            exist_ok=True
+        )
         browser_state_file.touch(exist_ok=True)
 
-        return Settings(
+        return cls(
             videos_dir=videos_dir,
             trace_dir=trace_dir,
             allure_results_dir=allure_results_dir,

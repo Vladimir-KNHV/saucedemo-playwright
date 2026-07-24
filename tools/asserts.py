@@ -1,46 +1,49 @@
 import allure
 from enums.sort_option import SortOption
-from tools.allure_tools.allure_formatters import format_items, format_sorting
+from tools.allure_tools.allure_formatters import format_items, format_sort_result
 
 
-def assert_sorted_products(after: list, option: SortOption):
+def assert_products_sorted(actual_items: list, option: SortOption):
     if option in (SortOption.NAME_AZ, SortOption.PRICE_LOW_HIGH):
-        expected = sorted(after)
+        expected = sorted(actual_items)
     elif option in (SortOption.NAME_ZA, SortOption.PRICE_HIGH_LOW):
-        expected = sorted(after, reverse=True)
+        expected = sorted(actual_items, reverse=True)
     else:
         raise ValueError(f"Unknown sort option: {option}")
 
     step = f'Assert products sorted by value {option.name}'
     with allure.step(step):
-        allure.attach(format_sorting(after), name="Actual sorting result", attachment_type=allure.attachment_type.TEXT)
-        assert expected == after
+        allure.attach(format_sort_result(actual_items), name="Actual sorting result", attachment_type=allure.attachment_type.TEXT)
+        assert expected == actual_items
 
-def assert_product_consistency(expected: list, actual: list, context: str):
+def assert_products_match(expected_products: list, actual_products: list, context: str):
     step = f"Assert product consistency: {context}"
     with allure.step(step):
-        allure.attach(format_items(expected), name="expected", attachment_type=allure.attachment_type.TEXT)
-        allure.attach(format_items(actual), name="actual", attachment_type=allure.attachment_type.TEXT)
+        allure.attach(format_items(expected_products), name="expected", attachment_type=allure.attachment_type.TEXT)
+        allure.attach(format_items(actual_products), name="actual", attachment_type=allure.attachment_type.TEXT)
 
-        assert expected == actual
+        assert expected_products == actual_products
 
-def assert_prices_match(expected: float, actual: float):
-    step = f"Assert item prices {expected} match total price {actual}"
+def assert_total_price_matches(expected: float, actual: float):
+    step =  f"Verify total price: expected={expected}, actual={actual}"
     with allure.step(step):
-        assert expected == actual
+        assert round(expected, 2) == round(actual, 2)
 
-def assert_cart_count(cart_count: int, total: int):
-    step = f"Assert cart count {cart_count} match total count {total}"
+def assert_cart_count(actual_count: int, expected_count: int):
+    step = (
+        f"Verify cart count. "
+        f"Expected: {expected_count}, Actual: {actual_count}"
+    )
     with allure.step(step):
-        assert cart_count == total
+        assert actual_count == expected_count
 
 
-def assert_remove(before: list, removed_items: list, items: list):
-    step = f"Assert removed item not in items"
+def assert_items_removed(before_items: list, removed_items: list, after_items: list):
+    step = f"Verify removed items are not present in cart"
     with allure.step(step):
-        allure.attach(format_items(before), name="Before removing", attachment_type=allure.attachment_type.TEXT)
-        allure.attach(format_items(removed_items), name="Removed_items", attachment_type=allure.attachment_type.TEXT)
-        allure.attach(format_items(items), name="Items after remove", attachment_type=allure.attachment_type.TEXT)
+        allure.attach(format_items(before_items), name="Before removing", attachment_type=allure.attachment_type.TEXT)
+        allure.attach(format_items(removed_items), name="Removed items", attachment_type=allure.attachment_type.TEXT)
+        allure.attach(format_items(after_items), name="Items after remove", attachment_type=allure.attachment_type.TEXT)
 
         for item in removed_items:
-            assert item not in items
+            assert item not in after_items

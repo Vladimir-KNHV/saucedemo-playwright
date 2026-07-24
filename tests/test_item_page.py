@@ -25,7 +25,7 @@ class TestItemPage:
         products_page_with_state.item_view_component.open_item_page(index=0)
         item_page_with_state.check_visible_item_page()
         actual_item = item_page_with_state.item_view_component.get_item_data()
-        assert_product_consistency(expected=expected_item, actual=actual_item, context='Products page to item page')
+        assert_products_match(expected_products=expected_item, actual_products=actual_item, context='Products page to item page')
 
     @allure.feature(AllureFeature.ITEM_PAGE)
     @allure.story(AllureStories.BACK_TO_PRODUCTS_FROM_ITEM_PAGE)
@@ -46,12 +46,12 @@ class TestItemPage:
         products_page_with_state.item_view_component.open_item_page(index=0)
         item_page_with_state.item_view_component.click_add_to_cart_button(indexes=0)
         item_page_with_state.item_view_component.check_visible(added=True)
-        count_in_icon_cart = item_page_with_state.navbar.get_count_in_icon_cart()
-        assert_cart_count(cart_count=count_in_icon_cart, total=1)
+        count_in_icon_cart = item_page_with_state.navbar.get_cart_badge_count()
+        assert_cart_count(actual_count=count_in_icon_cart, expected_count=1)
         item_page_with_state.navbar.open_cart()
         cart_page_with_state.item_view_component.check_visible(added=True, has_image=False)
         actual_item = cart_page_with_state.item_view_component.get_item_data()
-        assert_product_consistency(expected=expected_item, actual=actual_item, context='Item page to cart page')
+        assert_products_match(expected_products=expected_item, actual_products=actual_item, context='Item page to cart page')
 
     @allure.feature(AllureFeature.ITEM_PAGE)
     @allure.story(AllureStories.REMOVE_PRODUCT_FROM_ITEM_PAGE)
@@ -65,6 +65,6 @@ class TestItemPage:
         item_page_with_state.item_view_component.check_visible(added=False)
         item_page_with_state.navbar.open_cart()
         cart_items_count = cart_page_with_state.get_cart_items_count()
-        assert_cart_count(cart_count=cart_items_count, total=0)
+        assert_cart_count(actual_count=cart_items_count, expected_count=0)
 
 

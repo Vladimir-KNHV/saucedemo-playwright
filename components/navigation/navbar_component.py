@@ -27,7 +27,7 @@ class NavbarComponent(BaseComponent):
     def open_cart(self):
         self._cart_link.click()
 
-    def get_count_in_icon_cart(self) -> int:
+    def get_cart_badge_count(self) -> int:
         return int(self._cart_link.get_text())
 
     def open_menu(self):

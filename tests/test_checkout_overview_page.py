@@ -46,7 +46,7 @@ class TestCheckoutOverviewPage:
         checkout_info_page_with_state.fill_checkout_info_form(first_name='user', last_name='user', zip_code='123345')
         checkout_info_page_with_state.click_checkout_continue_button()
         actual = checkout_overview_page_with_state.item_view_component.get_item_data()
-        assert_product_consistency(expected=expected, actual=actual, context='Products to checkout overview')
+        assert_products_match(expected_products=expected, actual_products=actual, context='Products to checkout overview')
         checkout_overview_page_with_state.item_view_component.check_visible(has_image=False, has_button=False)
 
     @allure.story(AllureStories.VERIFY_TOTAL_PRICE)
@@ -60,7 +60,7 @@ class TestCheckoutOverviewPage:
         checkout_info_page_with_state.fill_checkout_info_form(first_name='user', last_name='user', zip_code='123345')
         checkout_info_page_with_state.click_checkout_continue_button()
         actual = checkout_overview_page_with_state.get_summary_total_price()
-        assert_prices_match(expected=expected, actual=actual)
+        assert_total_price_matches(expected=expected, actual=actual)
 
 
 

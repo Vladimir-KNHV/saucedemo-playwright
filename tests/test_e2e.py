@@ -14,7 +14,7 @@ from tools.allure_tools.epics import AllureEpic
 from tools.allure_tools.features import AllureFeature
 from tools.allure_tools.stories import AllureStories
 from tools.routes import AppRoute
-from tools.asserts import assert_product_consistency, assert_prices_match
+from tools.asserts import assert_products_match, assert_total_price_matches
 
 
 @pytest.mark.regression
@@ -52,7 +52,7 @@ class TestE2E:
 
         actual_in_cart = cart_page.item_view_component.get_item_data()
 
-        assert_product_consistency(expected=expected, actual=actual_in_cart, context="Product to cart")
+        assert_products_match(expected_products=expected, actual_products=actual_in_cart, context="Product to cart")
 
         cart_page.click_checkout_button()
 
@@ -71,11 +71,11 @@ class TestE2E:
         actual_in_overview = checkout_overview_page.item_view_component.get_item_data()
 
 
-        assert_product_consistency(expected=actual_in_cart, actual=actual_in_overview, context="Cart to checkout")
+        assert_products_match(expected_products=actual_in_cart, actual_products=actual_in_overview, context="Cart to checkout")
         price = float(sum(checkout_overview_page.item_view_component.get_all_prices()))
         total_price = checkout_overview_page.get_summary_total_price()
 
-        assert_prices_match(expected=price, actual=total_price)
+        assert_total_price_matches(expected=price, actual=total_price)
 
         checkout_overview_page.click_finish_button()
 
