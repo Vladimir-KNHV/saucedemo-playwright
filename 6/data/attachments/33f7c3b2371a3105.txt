@@ -1,0 +1,18 @@
+INFO     BASE_ELEMENT:base_element.py:36 Clicking Button with name "finish_button"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="finish"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "checkout_complete_title" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="title"]"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Text with name "checkout_complete_title" have text "Checkout: Complete!"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="title"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Container with name "complete_information" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="checkout-complete-container"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Image with name "confirmation_image" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="pony-express"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "confirmation_title" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="complete-header"]"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Text with name "confirmation_title" have text "Thank you for your order!"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="complete-header"]"
+INFO     BASE_ELEMENT:base_element.py:43 Checking Text with name "confirmation_description" is visible
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="complete-text"]"
+INFO     BASE_ELEMENT:base_element.py:50 Checking Text with name "confirmation_description" have text "Your order has been dispatched, and will arrive just as fast as the pony can get there!"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="complete-text"]"
