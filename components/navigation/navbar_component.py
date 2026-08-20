@@ -10,7 +10,7 @@ class NavbarComponent(BaseComponent):
     def __init__(self, page: Page):
         super().__init__(page)
 
-        self._open_menu_button = Button(page, '[data-test="open-menu"]', 'open menu')
+        self._open_menu_button = Button(page, '[id="react-burger-menu-btn"]', 'open menu')
         self._app_title = Text(page, '[class="app_logo"]', 'app_logo')
         self._cart_link = Link(page, '[data-test="shopping-cart-link"]', 'cart icon link')
         self._logout_link = Link(page, '//*[@data-test="logout-sidebar-link"]', 'logout link')

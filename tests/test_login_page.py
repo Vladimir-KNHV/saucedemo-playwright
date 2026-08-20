@@ -42,5 +42,16 @@ class TestAuthorization:
         login_page.check_current_url(re.compile(f'.*{AppRoute.PRODUCTS.value}'))
         products_page.check_visible_products_page()
 
+    @allure.title("Logout")
+    @allure.story(AllureStories.SUCCESSFUL_LOGOUT)
+    @allure.severity(Severity.CRITICAL)
+    def test_logout(self, login_page: LoginPage, products_page: ProductsPage):
+        login_page.open(AppRoute.LOGIN)
+        login_page.fill_login_form(settings.test_user.username, settings.test_user.password)
+        login_page.click_login_button()
+        products_page.navbar.open_menu()
+        products_page.navbar.logout()
+        login_page.check_visible_login_page()
+
 
 

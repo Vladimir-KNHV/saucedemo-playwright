@@ -2,6 +2,7 @@ from enum import Enum
 
 class AllureStories(str, Enum):
     SUCCESSFUL_LOGIN = 'Successful login'
+    SUCCESSFUL_LOGOUT = 'Successful logout'
     INVALID_LOGIN = 'Invalid login'
     SUCCESSFUL_PURCHASE = 'Successful purchase'
     SORT_PRODUCTS = "Sort products"
