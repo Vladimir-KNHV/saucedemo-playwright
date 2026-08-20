@@ -1,0 +1,4 @@
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="product-sort-container"]"
+INFO     DROPDOWN_ELEMENT:dropdown.py:19 Dropdown sort with value PRICE_HIGH_LOW
+INFO     BASE_ELEMENT:base_element.py:74 Getting all texts from Text with name "item price"
+INFO     BASE_ELEMENT:base_element.py:25 Getting locator "[data-test="inventory-item-price"]"
